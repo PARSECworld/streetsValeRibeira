@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis saveDateTime="2020-08-20T20:38:16" saveUserFull="Willian" version="3.14.1-Pi" projectname="" saveUser="willian">
+<qgis version="3.10.8-A Coruña" projectname="">
   <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
@@ -20,12 +20,12 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-group checked="Qt::Checked" name="Renda" expanded="1">
+    <layer-tree-group name="Renda" expanded="1" checked="Qt::Checked">
       <customproperties/>
-      <layer-tree-layer patch_size="-1,-1" id="setoresCensitarios_PR_2_ecfd2c60_5c9d_48b1_8c93_59bcf2e054f7" legend_exp="" checked="Qt::Checked" legend_split_behavior="0" name="setoresCensitarios_PR_2" source="./setoresCensitarios_PR_2.dbf|layername=setoresCensitarios_PR_2" expanded="0" providerKey="ogr">
+      <layer-tree-layer name="setoresCensitarios_PR_2" providerKey="ogr" expanded="0" legend_exp="" id="setoresCensitarios_PR_2_ecfd2c60_5c9d_48b1_8c93_59bcf2e054f7" checked="Qt::Checked" source="./setoresCensitarios_PR_2.dbf|layername=setoresCensitarios_PR_2">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer patch_size="-1,-1" id="setoresCensitarios_SP_2_9cd01ce2_e747_409d_98f8_e1eef8519f01" legend_exp="" checked="Qt::Checked" legend_split_behavior="0" name="setoresCensitarios_SP_2" source="./setoresCensitarios_SP_2.dbf|layername=setoresCensitarios_SP_2" expanded="0" providerKey="ogr">
+      <layer-tree-layer name="setoresCensitarios_SP_2" providerKey="ogr" expanded="0" legend_exp="" id="setoresCensitarios_SP_2_9cd01ce2_e747_409d_98f8_e1eef8519f01" checked="Qt::Checked" source="./setoresCensitarios_SP_2.dbf|layername=setoresCensitarios_SP_2">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -34,20 +34,20 @@
       <item>setoresCensitarios_SP_2_9cd01ce2_e747_409d_98f8_e1eef8519f01</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings type="1" intersection-snapping="0" minScale="0" self-snapping="0" enabled="0" scaleDependencyMode="0" mode="1" maxScale="0" tolerance="0" unit="2">
+  <snapping-settings enabled="0" intersection-snapping="0" unit="2" type="1" mode="1" tolerance="0">
     <individual-layer-settings>
-      <layer-setting type="1" minScale="0" id="setoresCensitarios_PR_2_ecfd2c60_5c9d_48b1_8c93_59bcf2e054f7" units="1" enabled="0" maxScale="0" tolerance="12"/>
-      <layer-setting type="1" minScale="0" id="setoresCensitarios_SP_2_9cd01ce2_e747_409d_98f8_e1eef8519f01" units="1" enabled="0" maxScale="0" tolerance="12"/>
+      <layer-setting units="1" enabled="0" id="setoresCensitarios_PR_2_ecfd2c60_5c9d_48b1_8c93_59bcf2e054f7" type="1" tolerance="12"/>
+      <layer-setting units="1" enabled="0" id="setoresCensitarios_SP_2_9cd01ce2_e747_409d_98f8_e1eef8519f01" type="1" tolerance="12"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
-  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
     <units>degrees</units>
     <extent>
-      <xmin>-49.74839582842076879</xmin>
-      <ymin>-26.06041218069328025</ymin>
-      <xmax>-46.79305399209408733</xmax>
-      <ymax>-24.46057302904194941</ymax>
+      <xmin>-51.08019338803097753</xmin>
+      <ymin>-26.55221697093236344</ymin>
+      <xmax>-43.47850799635381236</xmax>
+      <ymax>-22.43713500015866202</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -68,98 +68,23 @@
   </mapcanvas>
   <projectModels/>
   <legend updateDrawingOrder="true">
-    <legendgroup checked="Qt::Checked" open="true" name="Renda">
-      <legendlayer checked="Qt::Checked" open="false" name="setoresCensitarios_PR_2" drawingOrder="-1" showFeatureCount="0">
+    <legendgroup name="Renda" checked="Qt::Checked" open="true">
+      <legendlayer showFeatureCount="0" name="setoresCensitarios_PR_2" drawingOrder="-1" checked="Qt::Checked" open="false">
         <filegroup hidden="false" open="false">
-          <legendlayerfile isInOverview="0" layerid="setoresCensitarios_PR_2_ecfd2c60_5c9d_48b1_8c93_59bcf2e054f7" visible="1"/>
+          <legendlayerfile visible="1" isInOverview="0" layerid="setoresCensitarios_PR_2_ecfd2c60_5c9d_48b1_8c93_59bcf2e054f7"/>
         </filegroup>
       </legendlayer>
-      <legendlayer checked="Qt::Checked" open="false" name="setoresCensitarios_SP_2" drawingOrder="-1" showFeatureCount="0">
+      <legendlayer showFeatureCount="0" name="setoresCensitarios_SP_2" drawingOrder="-1" checked="Qt::Checked" open="false">
         <filegroup hidden="false" open="false">
-          <legendlayerfile isInOverview="0" layerid="setoresCensitarios_SP_2_9cd01ce2_e747_409d_98f8_e1eef8519f01" visible="1"/>
+          <legendlayerfile visible="1" isInOverview="0" layerid="setoresCensitarios_SP_2_9cd01ce2_e747_409d_98f8_e1eef8519f01"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
   </legend>
   <mapViewDocks/>
   <mapViewDocks3D/>
-  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
-    <units>degrees</units>
-    <extent>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>0</xmax>
-      <ymax>0</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <wkt>GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]]</wkt>
-        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-        <srsid>3452</srsid>
-        <srid>4326</srid>
-        <authid>EPSG:4326</authid>
-        <description>WGS 84</description>
-        <projectionacronym>longlat</projectionacronym>
-        <ellipsoidacronym>WGS84</ellipsoidacronym>
-        <geographicflag>true</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-    <expressionContextScope/>
-  </mapcanvas>
-  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
-    <units>degrees</units>
-    <extent>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>0</xmax>
-      <ymax>0</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <wkt>GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]]</wkt>
-        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-        <srsid>3452</srsid>
-        <srid>4326</srid>
-        <authid>EPSG:4326</authid>
-        <description>WGS 84</description>
-        <projectionacronym>longlat</projectionacronym>
-        <ellipsoidacronym>WGS84</ellipsoidacronym>
-        <geographicflag>true</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-    <expressionContextScope/>
-  </mapcanvas>
-  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
-    <units>degrees</units>
-    <extent>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>0</xmax>
-      <ymax>0</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <wkt>GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]]</wkt>
-        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-        <srsid>3452</srsid>
-        <srid>4326</srid>
-        <authid>EPSG:4326</authid>
-        <description>WGS 84</description>
-        <projectionacronym>longlat</projectionacronym>
-        <ellipsoidacronym>WGS84</ellipsoidacronym>
-        <geographicflag>true</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-    <expressionContextScope/>
-  </mapcanvas>
   <projectlayers>
-    <maplayer minScale="100000000" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" wkbType="MultiPolygon" styleCategories="AllStyleCategories" simplifyDrawingTol="1" autoRefreshTime="0" simplifyLocal="1" type="vector" refreshOnNotifyEnabled="0" geometry="Polygon" autoRefreshEnabled="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" maxScale="0">
+    <maplayer maxScale="0" simplifyDrawingHints="1" labelsEnabled="0" simplifyDrawingTol="1" geometry="Polygon" type="vector" autoRefreshEnabled="0" minScale="1e+8" wkbType="MultiPolygon" refreshOnNotifyMessage="" simplifyAlgorithm="0" refreshOnNotifyEnabled="0" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" simplifyLocal="1" styleCategories="AllStyleCategories" readOnly="0">
       <extent>
         <xmin>-49.64746499093890009</xmin>
         <ymin>-25.2827514034820986</ymin>
@@ -182,7 +107,7 @@
           <description></description>
           <projectionacronym></projectionacronym>
           <ellipsoidacronym></ellipsoidacronym>
-          <geographicflag>false</geographicflag>
+          <geographicflag>true</geographicflag>
         </spatialrefsys>
       </srs>
       <resourceMetadata>
@@ -214,11 +139,11 @@
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minz="0" crs="" maxz="0" maxy="0" dimensions="2" maxx="0" miny="0" minx="0"/>
+          <spatial maxz="0" minx="0" dimensions="2" maxy="0" crs="" minz="0" maxx="0" miny="0"/>
           <temporal>
             <period>
               <start></start>
@@ -242,28 +167,22 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <temporal durationField="" durationUnit="min" accumulate="0" startExpression="" endField="" enabled="0" mode="0" fixedDuration="0" startField="" endExpression="">
-        <fixedRange>
-          <start></start>
-          <end></end>
-        </fixedRange>
-      </temporal>
-      <renderer-v2 attr="RENDA0" type="graduatedSymbol" enableorderby="0" graduatedMethod="GraduatedColor" forceraster="0" symbollevels="0">
+      <renderer-v2 symbollevels="0" enableorderby="0" type="graduatedSymbol" forceraster="0" attr="RENDA0" graduatedMethod="GraduatedColor">
         <ranges>
-          <range upper="-2.551332318674407" render="true" symbol="0" label="-2,93 - -2,55" lower="-2.927236501584475"/>
-          <range upper="-2.242635047793377" render="true" symbol="1" label="-2,55 - -2,24" lower="-2.551332318674407"/>
-          <range upper="-2.027414222650572" render="true" symbol="2" label="-2,24 - -2,03" lower="-2.242635047793377"/>
-          <range upper="-1.815920651283972" render="true" symbol="3" label="-2,03 - -1,82" lower="-2.027414222650572"/>
-          <range upper="-1.229444460488287" render="true" symbol="4" label="-1,82 - -1,23" lower="-1.815920651283972"/>
-          <range upper="-0.853737712614927" render="true" symbol="5" label="-1,23 - -0,85" lower="-1.229444460488287"/>
-          <range upper="0.072673018993118" render="true" symbol="6" label="-0,85 - 0,07" lower="-0.853737712614927"/>
-          <range upper="1.263530613520835" render="true" symbol="7" label="0,07 - 1,26" lower="0.072673018993118"/>
-          <range upper="2.575747453027508" render="true" symbol="8" label="1,26 - 2,58" lower="1.263530613520835"/>
-          <range upper="6.579528478366666" render="true" symbol="9" label="2,58 - 6,58" lower="2.575747453027508"/>
+          <range lower="-2.927236501584475" render="true" upper="-2.551332318674407" symbol="0" label="-2,93 - -2,55"/>
+          <range lower="-2.551332318674407" render="true" upper="-2.242635047793377" symbol="1" label="-2,55 - -2,24"/>
+          <range lower="-2.242635047793377" render="true" upper="-2.027414222650572" symbol="2" label="-2,24 - -2,03"/>
+          <range lower="-2.027414222650572" render="true" upper="-1.815920651283972" symbol="3" label="-2,03 - -1,82"/>
+          <range lower="-1.815920651283972" render="true" upper="-1.229444460488287" symbol="4" label="-1,82 - -1,23"/>
+          <range lower="-1.229444460488287" render="true" upper="-0.853737712614927" symbol="5" label="-1,23 - -0,85"/>
+          <range lower="-0.853737712614927" render="true" upper="0.072673018993118" symbol="6" label="-0,85 - 0,07"/>
+          <range lower="0.072673018993118" render="true" upper="1.263530613520835" symbol="7" label="0,07 - 1,26"/>
+          <range lower="1.263530613520835" render="true" upper="2.575747453027508" symbol="8" label="1,26 - 2,58"/>
+          <range lower="2.575747453027508" render="true" upper="6.579528478366666" symbol="9" label="2,58 - 6,58"/>
         </ranges>
         <symbols>
-          <symbol type="fill" clip_to_extent="1" name="0" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="0" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="0,0,4,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -277,15 +196,15 @@
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="1" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="1" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="24,15,62,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -299,15 +218,15 @@
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="2" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="2" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="68,15,118,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -321,15 +240,15 @@
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="3" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="3" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="114,31,129,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -343,15 +262,15 @@
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="4" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="4" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="158,47,127,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -365,15 +284,15 @@
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="5" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="5" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="205,63,113,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -387,15 +306,15 @@
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="6" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="6" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="241,96,93,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -409,15 +328,15 @@
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="7" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="7" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="253,149,103,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -431,15 +350,15 @@
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="8" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="8" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="254,201,141,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -453,15 +372,15 @@
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="9" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="9" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="252,253,191,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -475,17 +394,17 @@
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </symbols>
         <source-symbol>
-          <symbol type="fill" clip_to_extent="1" name="0" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="0" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="255,158,23,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -499,15 +418,15 @@
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </source-symbol>
-        <colorramp type="gradient" name="[source]">
+        <colorramp name="[source]" type="gradient">
           <prop v="0,0,4,255" k="color1"/>
           <prop v="252,253,191,255" k="color2"/>
           <prop v="0" k="discrete"/>
@@ -515,18 +434,15 @@
           <prop v="0.0196078;2,2,11,255:0.0392157;5,4,22,255:0.0588235;9,7,32,255:0.0784314;14,11,43,255:0.0980392;20,14,54,255:0.117647;26,16,66,255:0.137255;33,17,78,255:0.156863;41,17,90,255:0.176471;49,17,101,255:0.196078;57,15,110,255:0.215686;66,15,117,255:0.235294;74,16,121,255:0.254902;82,19,124,255:0.27451;90,22,126,255:0.294118;98,25,128,255:0.313725;106,28,129,255:0.333333;114,31,129,255:0.352941;121,34,130,255:0.372549;129,37,129,255:0.392157;137,40,129,255:0.411765;145,43,129,255:0.431373;153,45,128,255:0.45098;161,48,126,255:0.470588;170,51,125,255:0.490196;178,53,123,255:0.509804;186,56,120,255:0.529412;194,59,117,255:0.54902;202,62,114,255:0.568627;210,66,111,255:0.588235;217,70,107,255:0.607843;224,76,103,255:0.627451;231,82,99,255:0.647059;236,88,96,255:0.666667;241,96,93,255:0.686275;244,105,92,255:0.705882;247,114,92,255:0.72549;249,123,93,255:0.745098;251,133,96,255:0.764706;252,142,100,255:0.784314;253,152,105,255:0.803922;254,161,110,255:0.823529;254,170,116,255:0.843137;254,180,123,255:0.862745;254,189,130,255:0.882353;254,198,138,255:0.901961;254,207,146,255:0.921569;254,216,154,255:0.941176;253,226,163,255:0.960784;253,235,172,255:0.980392;252,244,182,255" k="stops"/>
         </colorramp>
         <classificationMethod id="Quantile">
-          <symmetricMode astride="0" symmetrypoint="0" enabled="0"/>
-          <labelFormat format="%1 - %2" trimtrailingzeroes="1" labelprecision="2"/>
-          <parameters>
-            <Option/>
-          </parameters>
+          <symmetricMode enabled="0" astride="0" symmetrypoint="0"/>
+          <labelFormat format="%1 - %2 " trimtrailingzeroes="1" labelprecision="4"/>
           <extraInformation/>
         </classificationMethod>
         <rotation/>
         <sizescale/>
       </renderer-v2>
       <customproperties>
-        <property value="0" key="embeddedWidgets/count"/>
+        <property key="embeddedWidgets/count" value="0"/>
         <property key="variableNames"/>
         <property key="variableValues"/>
       </customproperties>
@@ -534,60 +450,30 @@
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-        <DiagramCategory enabled="0" backgroundColor="#ffffff" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" showAxis="1" penWidth="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" penColor="#000000" lineSizeType="MM" labelPlacementMethod="XHeight" diagramOrientation="Up" scaleBasedVisibility="0" sizeType="MM" maxScaleDenominator="1e+8" backgroundAlpha="255" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" minimumSize="0" direction="0" height="15" penAlpha="255" spacing="5" opacity="1" minScaleDenominator="0" barWidth="5" width="15">
-          <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
-          <axisSymbol>
-            <symbol type="line" clip_to_extent="1" name="" force_rhr="0" alpha="1">
-              <layer locked="0" pass="0" enabled="1" class="SimpleLine">
-                <prop v="square" k="capstyle"/>
-                <prop v="5;2" k="customdash"/>
-                <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-                <prop v="MM" k="customdash_unit"/>
-                <prop v="0" k="draw_inside_polygon"/>
-                <prop v="bevel" k="joinstyle"/>
-                <prop v="35,35,35,255" k="line_color"/>
-                <prop v="solid" k="line_style"/>
-                <prop v="0.26" k="line_width"/>
-                <prop v="MM" k="line_width_unit"/>
-                <prop v="0" k="offset"/>
-                <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-                <prop v="MM" k="offset_unit"/>
-                <prop v="0" k="ring_filter"/>
-                <prop v="0" k="use_custom_dash"/>
-                <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-                <data_defined_properties>
-                  <Option type="Map">
-                    <Option type="QString" value="" name="name"/>
-                    <Option name="properties"/>
-                    <Option type="QString" value="collection" name="type"/>
-                  </Option>
-                </data_defined_properties>
-              </layer>
-            </symbol>
-          </axisSymbol>
+        <DiagramCategory backgroundColor="#ffffff" minimumSize="0" rotationOffset="270" sizeType="MM" scaleBasedVisibility="0" penWidth="0" width="15" barWidth="5" scaleDependency="Area" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" diagramOrientation="Up" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" height="15" penAlpha="255" penColor="#000000" sizeScale="3x:0,0,0,0,0,0" enabled="0" opacity="1" backgroundAlpha="255">
+          <fontProperties style="" description="Cantarell,11,-1,5,50,0,0,0,0,0"/>
+          <attribute color="#000000" field="" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings showAll="1" placement="1" linePlacementFlags="18" dist="0" zIndex="0" priority="0" obstacle="0">
+      <DiagramLayerSettings obstacle="0" showAll="1" zIndex="0" priority="0" placement="1" linePlacementFlags="18" dist="0">
         <properties>
           <Option type="Map">
-            <Option type="QString" value="" name="name"/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option type="QString" value="collection" name="type"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </properties>
       </DiagramLayerSettings>
-      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
         <activeChecks/>
         <checkConfiguration type="Map">
-          <Option type="Map" name="QgsGeometryGapCheck">
-            <Option type="double" value="0" name="allowedGapsBuffer"/>
-            <Option type="bool" value="false" name="allowedGapsEnabled"/>
-            <Option type="QString" value="" name="allowedGapsLayer"/>
+          <Option name="QgsGeometryGapCheck" type="Map">
+            <Option name="allowedGapsBuffer" type="double" value="0"/>
+            <Option name="allowedGapsEnabled" type="bool" value="false"/>
+            <Option name="allowedGapsLayer" type="QString" value=""/>
           </Option>
         </checkConfiguration>
       </geometryOptions>
-      <referencedLayers/>
-      <referencingLayers/>
       <fieldConfiguration>
         <field name="ID">
           <editWidget type="TextEdit">
@@ -673,240 +559,97 @@
             </config>
           </editWidget>
         </field>
-        <field name="AGE_MEAN">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="AGE_MEDIAN">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="PERC_LSOA_">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="DECILE_LSO">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="PERC_LSOA2">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="DECILE_LS2">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="PERC_LSOA3">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="DECILE_LS3">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="PERC_LSOA4">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="DECILE_LS4">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="RENDA0">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="RENDA1">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="RENDA2">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
       </fieldConfiguration>
       <aliases>
-        <alias index="0" field="ID" name=""/>
-        <alias index="1" field="CD_GEOCODI" name=""/>
-        <alias index="2" field="TIPO" name=""/>
-        <alias index="3" field="CD_GEOCODS" name=""/>
-        <alias index="4" field="NM_SUBDIST" name=""/>
-        <alias index="5" field="CD_GEOCODD" name=""/>
-        <alias index="6" field="NM_DISTRIT" name=""/>
-        <alias index="7" field="CD_GEOCODM" name=""/>
-        <alias index="8" field="NM_MUNICIP" name=""/>
-        <alias index="9" field="NM_MICRO" name=""/>
-        <alias index="10" field="NM_MESO" name=""/>
-        <alias index="11" field="ORIG_OGC_F" name=""/>
-        <alias index="12" field="AGE_MEAN" name=""/>
-        <alias index="13" field="AGE_MEDIAN" name=""/>
-        <alias index="14" field="PERC_LSOA_" name=""/>
-        <alias index="15" field="DECILE_LSO" name=""/>
-        <alias index="16" field="PERC_LSOA2" name=""/>
-        <alias index="17" field="DECILE_LS2" name=""/>
-        <alias index="18" field="PERC_LSOA3" name=""/>
-        <alias index="19" field="DECILE_LS3" name=""/>
-        <alias index="20" field="PERC_LSOA4" name=""/>
-        <alias index="21" field="DECILE_LS4" name=""/>
-        <alias index="22" field="RENDA0" name=""/>
-        <alias index="23" field="RENDA1" name=""/>
-        <alias index="24" field="RENDA2" name=""/>
+        <alias name="" index="0" field="ID"/>
+        <alias name="" index="1" field="CD_GEOCODI"/>
+        <alias name="" index="2" field="TIPO"/>
+        <alias name="" index="3" field="CD_GEOCODS"/>
+        <alias name="" index="4" field="NM_SUBDIST"/>
+        <alias name="" index="5" field="CD_GEOCODD"/>
+        <alias name="" index="6" field="NM_DISTRIT"/>
+        <alias name="" index="7" field="CD_GEOCODM"/>
+        <alias name="" index="8" field="NM_MUNICIP"/>
+        <alias name="" index="9" field="NM_MICRO"/>
+        <alias name="" index="10" field="NM_MESO"/>
+        <alias name="" index="11" field="ORIG_OGC_F"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" field="ID" applyOnUpdate="0"/>
-        <default expression="" field="CD_GEOCODI" applyOnUpdate="0"/>
-        <default expression="" field="TIPO" applyOnUpdate="0"/>
-        <default expression="" field="CD_GEOCODS" applyOnUpdate="0"/>
-        <default expression="" field="NM_SUBDIST" applyOnUpdate="0"/>
-        <default expression="" field="CD_GEOCODD" applyOnUpdate="0"/>
-        <default expression="" field="NM_DISTRIT" applyOnUpdate="0"/>
-        <default expression="" field="CD_GEOCODM" applyOnUpdate="0"/>
-        <default expression="" field="NM_MUNICIP" applyOnUpdate="0"/>
-        <default expression="" field="NM_MICRO" applyOnUpdate="0"/>
-        <default expression="" field="NM_MESO" applyOnUpdate="0"/>
-        <default expression="" field="ORIG_OGC_F" applyOnUpdate="0"/>
-        <default expression="" field="AGE_MEAN" applyOnUpdate="0"/>
-        <default expression="" field="AGE_MEDIAN" applyOnUpdate="0"/>
-        <default expression="" field="PERC_LSOA_" applyOnUpdate="0"/>
-        <default expression="" field="DECILE_LSO" applyOnUpdate="0"/>
-        <default expression="" field="PERC_LSOA2" applyOnUpdate="0"/>
-        <default expression="" field="DECILE_LS2" applyOnUpdate="0"/>
-        <default expression="" field="PERC_LSOA3" applyOnUpdate="0"/>
-        <default expression="" field="DECILE_LS3" applyOnUpdate="0"/>
-        <default expression="" field="PERC_LSOA4" applyOnUpdate="0"/>
-        <default expression="" field="DECILE_LS4" applyOnUpdate="0"/>
-        <default expression="" field="RENDA0" applyOnUpdate="0"/>
-        <default expression="" field="RENDA1" applyOnUpdate="0"/>
-        <default expression="" field="RENDA2" applyOnUpdate="0"/>
+        <default applyOnUpdate="0" expression="" field="ID"/>
+        <default applyOnUpdate="0" expression="" field="CD_GEOCODI"/>
+        <default applyOnUpdate="0" expression="" field="TIPO"/>
+        <default applyOnUpdate="0" expression="" field="CD_GEOCODS"/>
+        <default applyOnUpdate="0" expression="" field="NM_SUBDIST"/>
+        <default applyOnUpdate="0" expression="" field="CD_GEOCODD"/>
+        <default applyOnUpdate="0" expression="" field="NM_DISTRIT"/>
+        <default applyOnUpdate="0" expression="" field="CD_GEOCODM"/>
+        <default applyOnUpdate="0" expression="" field="NM_MUNICIP"/>
+        <default applyOnUpdate="0" expression="" field="NM_MICRO"/>
+        <default applyOnUpdate="0" expression="" field="NM_MESO"/>
+        <default applyOnUpdate="0" expression="" field="ORIG_OGC_F"/>
       </defaults>
       <constraints>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="ID" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="CD_GEOCODI" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="TIPO" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="CD_GEOCODS" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="NM_SUBDIST" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="CD_GEOCODD" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="NM_DISTRIT" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="CD_GEOCODM" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="NM_MUNICIP" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="NM_MICRO" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="NM_MESO" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="ORIG_OGC_F" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="AGE_MEAN" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="AGE_MEDIAN" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="PERC_LSOA_" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="DECILE_LSO" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="PERC_LSOA2" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="DECILE_LS2" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="PERC_LSOA3" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="DECILE_LS3" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="PERC_LSOA4" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="DECILE_LS4" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="RENDA0" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="RENDA1" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="RENDA2" unique_strength="0"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="ID"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="CD_GEOCODI"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="TIPO"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="CD_GEOCODS"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="NM_SUBDIST"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="CD_GEOCODD"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="NM_DISTRIT"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="CD_GEOCODM"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="NM_MUNICIP"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="NM_MICRO"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="NM_MESO"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="ORIG_OGC_F"/>
       </constraints>
       <constraintExpressions>
-        <constraint desc="" exp="" field="ID"/>
-        <constraint desc="" exp="" field="CD_GEOCODI"/>
-        <constraint desc="" exp="" field="TIPO"/>
-        <constraint desc="" exp="" field="CD_GEOCODS"/>
-        <constraint desc="" exp="" field="NM_SUBDIST"/>
-        <constraint desc="" exp="" field="CD_GEOCODD"/>
-        <constraint desc="" exp="" field="NM_DISTRIT"/>
-        <constraint desc="" exp="" field="CD_GEOCODM"/>
-        <constraint desc="" exp="" field="NM_MUNICIP"/>
-        <constraint desc="" exp="" field="NM_MICRO"/>
-        <constraint desc="" exp="" field="NM_MESO"/>
-        <constraint desc="" exp="" field="ORIG_OGC_F"/>
-        <constraint desc="" exp="" field="AGE_MEAN"/>
-        <constraint desc="" exp="" field="AGE_MEDIAN"/>
-        <constraint desc="" exp="" field="PERC_LSOA_"/>
-        <constraint desc="" exp="" field="DECILE_LSO"/>
-        <constraint desc="" exp="" field="PERC_LSOA2"/>
-        <constraint desc="" exp="" field="DECILE_LS2"/>
-        <constraint desc="" exp="" field="PERC_LSOA3"/>
-        <constraint desc="" exp="" field="DECILE_LS3"/>
-        <constraint desc="" exp="" field="PERC_LSOA4"/>
-        <constraint desc="" exp="" field="DECILE_LS4"/>
-        <constraint desc="" exp="" field="RENDA0"/>
-        <constraint desc="" exp="" field="RENDA1"/>
-        <constraint desc="" exp="" field="RENDA2"/>
+        <constraint exp="" field="ID" desc=""/>
+        <constraint exp="" field="CD_GEOCODI" desc=""/>
+        <constraint exp="" field="TIPO" desc=""/>
+        <constraint exp="" field="CD_GEOCODS" desc=""/>
+        <constraint exp="" field="NM_SUBDIST" desc=""/>
+        <constraint exp="" field="CD_GEOCODD" desc=""/>
+        <constraint exp="" field="NM_DISTRIT" desc=""/>
+        <constraint exp="" field="CD_GEOCODM" desc=""/>
+        <constraint exp="" field="NM_MUNICIP" desc=""/>
+        <constraint exp="" field="NM_MICRO" desc=""/>
+        <constraint exp="" field="NM_MESO" desc=""/>
+        <constraint exp="" field="ORIG_OGC_F" desc=""/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
         <columns>
-          <column type="field" width="-1" hidden="0" name="ID"/>
-          <column type="field" width="-1" hidden="0" name="CD_GEOCODI"/>
-          <column type="field" width="-1" hidden="0" name="TIPO"/>
-          <column type="field" width="-1" hidden="0" name="CD_GEOCODS"/>
-          <column type="field" width="-1" hidden="0" name="NM_SUBDIST"/>
-          <column type="field" width="-1" hidden="0" name="CD_GEOCODD"/>
-          <column type="field" width="-1" hidden="0" name="NM_DISTRIT"/>
-          <column type="field" width="-1" hidden="0" name="CD_GEOCODM"/>
-          <column type="field" width="-1" hidden="0" name="NM_MUNICIP"/>
-          <column type="field" width="-1" hidden="0" name="NM_MICRO"/>
-          <column type="field" width="-1" hidden="0" name="NM_MESO"/>
-          <column type="field" width="-1" hidden="0" name="ORIG_OGC_F"/>
-          <column type="field" width="-1" hidden="0" name="AGE_MEAN"/>
-          <column type="field" width="-1" hidden="0" name="AGE_MEDIAN"/>
-          <column type="field" width="-1" hidden="0" name="PERC_LSOA_"/>
-          <column type="field" width="-1" hidden="0" name="DECILE_LSO"/>
-          <column type="field" width="-1" hidden="0" name="PERC_LSOA2"/>
-          <column type="field" width="-1" hidden="0" name="DECILE_LS2"/>
-          <column type="field" width="-1" hidden="0" name="PERC_LSOA3"/>
-          <column type="field" width="-1" hidden="0" name="DECILE_LS3"/>
-          <column type="field" width="-1" hidden="0" name="PERC_LSOA4"/>
-          <column type="field" width="-1" hidden="0" name="DECILE_LS4"/>
-          <column type="field" width="-1" hidden="0" name="RENDA0"/>
-          <column type="field" width="-1" hidden="0" name="RENDA1"/>
-          <column type="field" width="-1" hidden="0" name="RENDA2"/>
-          <column type="actions" width="-1" hidden="1"/>
+          <column name="ID" hidden="0" type="field" width="-1"/>
+          <column name="CD_GEOCODI" hidden="0" type="field" width="-1"/>
+          <column name="TIPO" hidden="0" type="field" width="-1"/>
+          <column name="CD_GEOCODS" hidden="0" type="field" width="-1"/>
+          <column name="NM_SUBDIST" hidden="0" type="field" width="-1"/>
+          <column name="CD_GEOCODD" hidden="0" type="field" width="-1"/>
+          <column name="NM_DISTRIT" hidden="0" type="field" width="-1"/>
+          <column name="CD_GEOCODM" hidden="0" type="field" width="-1"/>
+          <column name="NM_MUNICIP" hidden="0" type="field" width="-1"/>
+          <column name="NM_MICRO" hidden="0" type="field" width="-1"/>
+          <column name="NM_MESO" hidden="0" type="field" width="-1"/>
+          <column name="ORIG_OGC_F" hidden="0" type="field" width="-1"/>
+          <column name="AGE_MEAN" hidden="0" type="field" width="-1"/>
+          <column name="AGE_MEDIAN" hidden="1" type="field" width="-1"/>
+          <column name="PERC_LSOA_" hidden="1" type="field" width="-1"/>
+          <column name="DECILE_LSO" hidden="1" type="field" width="-1"/>
+          <column name="PERC_LSOA2" hidden="1" type="field" width="-1"/>
+          <column name="DECILE_LS2" hidden="1" type="field" width="-1"/>
+          <column name="PERC_LSOA3" hidden="1" type="field" width="-1"/>
+          <column name="DECILE_LS3" hidden="1" type="field" width="-1"/>
+          <column name="PERC_LSOA4" hidden="1" type="field" width="-1"/>
+          <column name="DECILE_LS4" hidden="1" type="field" width="-1"/>
+          <column name="RENDA0" hidden="1" type="field" width="-1"/>
+          <column name="RENDA1" hidden="1" type="field" width="-1"/>
+          <column name="RENDA2" hidden="1" type="field" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
@@ -938,31 +681,31 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <editable>
-        <field editable="1" name="AGE_MEAN"/>
-        <field editable="1" name="AGE_MEDIAN"/>
-        <field editable="1" name="CD_GEOCODD"/>
-        <field editable="1" name="CD_GEOCODI"/>
-        <field editable="1" name="CD_GEOCODM"/>
-        <field editable="1" name="CD_GEOCODS"/>
-        <field editable="1" name="DECILE_LS2"/>
-        <field editable="1" name="DECILE_LS3"/>
-        <field editable="1" name="DECILE_LS4"/>
-        <field editable="1" name="DECILE_LSO"/>
-        <field editable="1" name="ID"/>
-        <field editable="1" name="NM_DISTRIT"/>
-        <field editable="1" name="NM_MESO"/>
-        <field editable="1" name="NM_MICRO"/>
-        <field editable="1" name="NM_MUNICIP"/>
-        <field editable="1" name="NM_SUBDIST"/>
-        <field editable="1" name="ORIG_OGC_F"/>
-        <field editable="1" name="PERC_LSOA2"/>
-        <field editable="1" name="PERC_LSOA3"/>
-        <field editable="1" name="PERC_LSOA4"/>
-        <field editable="1" name="PERC_LSOA_"/>
-        <field editable="1" name="RENDA0"/>
-        <field editable="1" name="RENDA1"/>
-        <field editable="1" name="RENDA2"/>
-        <field editable="1" name="TIPO"/>
+        <field name="AGE_MEAN" editable="1"/>
+        <field name="AGE_MEDIAN" editable="1"/>
+        <field name="CD_GEOCODD" editable="1"/>
+        <field name="CD_GEOCODI" editable="1"/>
+        <field name="CD_GEOCODM" editable="1"/>
+        <field name="CD_GEOCODS" editable="1"/>
+        <field name="DECILE_LS2" editable="1"/>
+        <field name="DECILE_LS3" editable="1"/>
+        <field name="DECILE_LS4" editable="1"/>
+        <field name="DECILE_LSO" editable="1"/>
+        <field name="ID" editable="1"/>
+        <field name="NM_DISTRIT" editable="1"/>
+        <field name="NM_MESO" editable="1"/>
+        <field name="NM_MICRO" editable="1"/>
+        <field name="NM_MUNICIP" editable="1"/>
+        <field name="NM_SUBDIST" editable="1"/>
+        <field name="ORIG_OGC_F" editable="1"/>
+        <field name="PERC_LSOA2" editable="1"/>
+        <field name="PERC_LSOA3" editable="1"/>
+        <field name="PERC_LSOA4" editable="1"/>
+        <field name="PERC_LSOA_" editable="1"/>
+        <field name="RENDA0" editable="1"/>
+        <field name="RENDA1" editable="1"/>
+        <field name="RENDA2" editable="1"/>
+        <field name="TIPO" editable="1"/>
       </editable>
       <labelOnTop>
         <field name="AGE_MEAN" labelOnTop="0"/>
@@ -991,12 +734,11 @@ def my_form_open(dialog, layer, feature):
         <field name="RENDA2" labelOnTop="0"/>
         <field name="TIPO" labelOnTop="0"/>
       </labelOnTop>
-      <dataDefinedFieldProperties/>
       <widgets/>
       <previewExpression>"ID"</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer minScale="100000000" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" labelsEnabled="0" readOnly="0" wkbType="MultiPolygon" styleCategories="AllStyleCategories" simplifyDrawingTol="1" autoRefreshTime="0" simplifyLocal="1" type="vector" refreshOnNotifyEnabled="0" geometry="Polygon" autoRefreshEnabled="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" maxScale="0">
+    <maplayer maxScale="0" simplifyDrawingHints="1" labelsEnabled="0" simplifyDrawingTol="1" geometry="Polygon" type="vector" autoRefreshEnabled="0" minScale="1e+8" wkbType="MultiPolygon" refreshOnNotifyMessage="" simplifyAlgorithm="0" refreshOnNotifyEnabled="0" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" simplifyLocal="1" styleCategories="AllStyleCategories" readOnly="0">
       <extent>
         <xmin>-49.3176777415907992</xmin>
         <ymin>-25.31232094931399956</ymin>
@@ -1019,7 +761,7 @@ def my_form_open(dialog, layer, feature):
           <description></description>
           <projectionacronym></projectionacronym>
           <ellipsoidacronym></ellipsoidacronym>
-          <geographicflag>false</geographicflag>
+          <geographicflag>true</geographicflag>
         </spatialrefsys>
       </srs>
       <resourceMetadata>
@@ -1051,11 +793,11 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minz="0" crs="" maxz="0" maxy="0" dimensions="2" maxx="0" miny="0" minx="0"/>
+          <spatial maxz="0" minx="0" dimensions="2" maxy="0" crs="" minz="0" maxx="0" miny="0"/>
           <temporal>
             <period>
               <start></start>
@@ -1079,28 +821,22 @@ def my_form_open(dialog, layer, feature):
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <temporal durationField="" durationUnit="min" accumulate="0" startExpression="" endField="" enabled="0" mode="0" fixedDuration="0" startField="" endExpression="">
-        <fixedRange>
-          <start></start>
-          <end></end>
-        </fixedRange>
-      </temporal>
-      <renderer-v2 attr="RENDA0" type="graduatedSymbol" enableorderby="0" graduatedMethod="GraduatedColor" forceraster="0" symbollevels="0">
+      <renderer-v2 symbollevels="0" enableorderby="0" type="graduatedSymbol" forceraster="0" attr="RENDA0" graduatedMethod="GraduatedColor">
         <ranges>
-          <range upper="-2.448527537769097" render="true" symbol="0" label="-2,97 - -2,45" lower="-2.969823160854314"/>
-          <range upper="-2.026673978770378" render="true" symbol="1" label="-2,45 - -2,03" lower="-2.448527537769097"/>
-          <range upper="-1.570979642130281" render="true" symbol="2" label="-2,03 - -1,57" lower="-2.026673978770378"/>
-          <range upper="-1.160435038586527" render="true" symbol="3" label="-1,57 - -1,16" lower="-1.570979642130281"/>
-          <range upper="-0.463672287932576" render="true" symbol="4" label="-1,16 - -0,46" lower="-1.160435038586527"/>
-          <range upper="0.017898861909539" render="true" symbol="5" label="-0,46 - 0,02" lower="-0.463672287932576"/>
-          <range upper="0.826578539769940" render="true" symbol="6" label="0,02 - 0,83" lower="0.017898861909539"/>
-          <range upper="2.121203425136100" render="true" symbol="7" label="0,83 - 2,12" lower="0.826578539769940"/>
-          <range upper="3.822693587994843" render="true" symbol="8" label="2,12 - 3,82" lower="2.121203425136100"/>
-          <range upper="14.297824026808144" render="true" symbol="9" label="3,82 - 14,3" lower="3.822693587994843"/>
+          <range lower="-2.969823160854314" render="true" upper="-2.448527537769097" symbol="0" label="-2,97 - -2,45"/>
+          <range lower="-2.448527537769097" render="true" upper="-2.026673978770378" symbol="1" label="-2,45 - -2,03"/>
+          <range lower="-2.026673978770378" render="true" upper="-1.570979642130281" symbol="2" label="-2,03 - -1,57"/>
+          <range lower="-1.570979642130281" render="true" upper="-1.160435038586527" symbol="3" label="-1,57 - -1,16"/>
+          <range lower="-1.160435038586527" render="true" upper="-0.463672287932576" symbol="4" label="-1,16 - -0,46"/>
+          <range lower="-0.463672287932576" render="true" upper="0.017898861909539" symbol="5" label="-0,46 - 0,02"/>
+          <range lower="0.017898861909539" render="true" upper="0.826578539769940" symbol="6" label="0,02 - 0,83"/>
+          <range lower="0.826578539769940" render="true" upper="2.121203425136100" symbol="7" label="0,83 - 2,12"/>
+          <range lower="2.121203425136100" render="true" upper="3.822693587994843" symbol="8" label="2,12 - 3,82"/>
+          <range lower="3.822693587994843" render="true" upper="14.297824026808144" symbol="9" label="3,82 - 14,3"/>
         </ranges>
         <symbols>
-          <symbol type="fill" clip_to_extent="1" name="0" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="0" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="0,0,4,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -1114,15 +850,15 @@ def my_form_open(dialog, layer, feature):
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="1" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="1" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="24,15,62,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -1136,15 +872,15 @@ def my_form_open(dialog, layer, feature):
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="2" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="2" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="68,15,118,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -1158,15 +894,15 @@ def my_form_open(dialog, layer, feature):
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="3" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="3" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="114,31,129,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -1180,15 +916,15 @@ def my_form_open(dialog, layer, feature):
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="4" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="4" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="158,47,127,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -1202,15 +938,15 @@ def my_form_open(dialog, layer, feature):
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="5" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="5" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="205,63,113,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -1224,15 +960,15 @@ def my_form_open(dialog, layer, feature):
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="6" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="6" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="241,96,93,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -1246,15 +982,15 @@ def my_form_open(dialog, layer, feature):
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="7" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="7" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="253,149,103,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -1268,15 +1004,15 @@ def my_form_open(dialog, layer, feature):
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="8" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="8" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="254,201,141,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -1290,15 +1026,15 @@ def my_form_open(dialog, layer, feature):
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" name="9" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="9" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="252,253,191,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -1312,17 +1048,17 @@ def my_form_open(dialog, layer, feature):
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </symbols>
         <source-symbol>
-          <symbol type="fill" clip_to_extent="1" name="0" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="0" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="231,113,72,255" k="color"/>
               <prop v="bevel" k="joinstyle"/>
@@ -1336,15 +1072,15 @@ def my_form_open(dialog, layer, feature):
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </source-symbol>
-        <colorramp type="gradient" name="[source]">
+        <colorramp name="[source]" type="gradient">
           <prop v="0,0,4,255" k="color1"/>
           <prop v="252,253,191,255" k="color2"/>
           <prop v="0" k="discrete"/>
@@ -1352,18 +1088,15 @@ def my_form_open(dialog, layer, feature):
           <prop v="0.0196078;2,2,11,255:0.0392157;5,4,22,255:0.0588235;9,7,32,255:0.0784314;14,11,43,255:0.0980392;20,14,54,255:0.117647;26,16,66,255:0.137255;33,17,78,255:0.156863;41,17,90,255:0.176471;49,17,101,255:0.196078;57,15,110,255:0.215686;66,15,117,255:0.235294;74,16,121,255:0.254902;82,19,124,255:0.27451;90,22,126,255:0.294118;98,25,128,255:0.313725;106,28,129,255:0.333333;114,31,129,255:0.352941;121,34,130,255:0.372549;129,37,129,255:0.392157;137,40,129,255:0.411765;145,43,129,255:0.431373;153,45,128,255:0.45098;161,48,126,255:0.470588;170,51,125,255:0.490196;178,53,123,255:0.509804;186,56,120,255:0.529412;194,59,117,255:0.54902;202,62,114,255:0.568627;210,66,111,255:0.588235;217,70,107,255:0.607843;224,76,103,255:0.627451;231,82,99,255:0.647059;236,88,96,255:0.666667;241,96,93,255:0.686275;244,105,92,255:0.705882;247,114,92,255:0.72549;249,123,93,255:0.745098;251,133,96,255:0.764706;252,142,100,255:0.784314;253,152,105,255:0.803922;254,161,110,255:0.823529;254,170,116,255:0.843137;254,180,123,255:0.862745;254,189,130,255:0.882353;254,198,138,255:0.901961;254,207,146,255:0.921569;254,216,154,255:0.941176;253,226,163,255:0.960784;253,235,172,255:0.980392;252,244,182,255" k="stops"/>
         </colorramp>
         <classificationMethod id="Quantile">
-          <symmetricMode astride="0" symmetrypoint="0" enabled="0"/>
-          <labelFormat format="%1 - %2" trimtrailingzeroes="1" labelprecision="2"/>
-          <parameters>
-            <Option/>
-          </parameters>
+          <symmetricMode enabled="0" astride="0" symmetrypoint="0"/>
+          <labelFormat format="%1 - %2 " trimtrailingzeroes="1" labelprecision="4"/>
           <extraInformation/>
         </classificationMethod>
         <rotation/>
         <sizescale/>
       </renderer-v2>
       <customproperties>
-        <property value="0" key="embeddedWidgets/count"/>
+        <property key="embeddedWidgets/count" value="0"/>
         <property key="variableNames"/>
         <property key="variableValues"/>
       </customproperties>
@@ -1371,60 +1104,30 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-        <DiagramCategory enabled="0" backgroundColor="#ffffff" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" showAxis="1" penWidth="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" penColor="#000000" lineSizeType="MM" labelPlacementMethod="XHeight" diagramOrientation="Up" scaleBasedVisibility="0" sizeType="MM" maxScaleDenominator="1e+8" backgroundAlpha="255" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" minimumSize="0" direction="0" height="15" penAlpha="255" spacing="5" opacity="1" minScaleDenominator="0" barWidth="5" width="15">
-          <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
-          <axisSymbol>
-            <symbol type="line" clip_to_extent="1" name="" force_rhr="0" alpha="1">
-              <layer locked="0" pass="0" enabled="1" class="SimpleLine">
-                <prop v="square" k="capstyle"/>
-                <prop v="5;2" k="customdash"/>
-                <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-                <prop v="MM" k="customdash_unit"/>
-                <prop v="0" k="draw_inside_polygon"/>
-                <prop v="bevel" k="joinstyle"/>
-                <prop v="35,35,35,255" k="line_color"/>
-                <prop v="solid" k="line_style"/>
-                <prop v="0.26" k="line_width"/>
-                <prop v="MM" k="line_width_unit"/>
-                <prop v="0" k="offset"/>
-                <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-                <prop v="MM" k="offset_unit"/>
-                <prop v="0" k="ring_filter"/>
-                <prop v="0" k="use_custom_dash"/>
-                <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-                <data_defined_properties>
-                  <Option type="Map">
-                    <Option type="QString" value="" name="name"/>
-                    <Option name="properties"/>
-                    <Option type="QString" value="collection" name="type"/>
-                  </Option>
-                </data_defined_properties>
-              </layer>
-            </symbol>
-          </axisSymbol>
+        <DiagramCategory backgroundColor="#ffffff" minimumSize="0" rotationOffset="270" sizeType="MM" scaleBasedVisibility="0" penWidth="0" width="15" barWidth="5" scaleDependency="Area" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" diagramOrientation="Up" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" height="15" penAlpha="255" penColor="#000000" sizeScale="3x:0,0,0,0,0,0" enabled="0" opacity="1" backgroundAlpha="255">
+          <fontProperties style="" description="Cantarell,11,-1,5,50,0,0,0,0,0"/>
+          <attribute color="#000000" field="" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings showAll="1" placement="1" linePlacementFlags="18" dist="0" zIndex="0" priority="0" obstacle="0">
+      <DiagramLayerSettings obstacle="0" showAll="1" zIndex="0" priority="0" placement="1" linePlacementFlags="18" dist="0">
         <properties>
           <Option type="Map">
-            <Option type="QString" value="" name="name"/>
+            <Option name="name" type="QString" value=""/>
             <Option name="properties"/>
-            <Option type="QString" value="collection" name="type"/>
+            <Option name="type" type="QString" value="collection"/>
           </Option>
         </properties>
       </DiagramLayerSettings>
-      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
         <activeChecks/>
         <checkConfiguration type="Map">
-          <Option type="Map" name="QgsGeometryGapCheck">
-            <Option type="double" value="0" name="allowedGapsBuffer"/>
-            <Option type="bool" value="false" name="allowedGapsEnabled"/>
-            <Option type="QString" value="" name="allowedGapsLayer"/>
+          <Option name="QgsGeometryGapCheck" type="Map">
+            <Option name="allowedGapsBuffer" type="double" value="0"/>
+            <Option name="allowedGapsEnabled" type="bool" value="false"/>
+            <Option name="allowedGapsLayer" type="QString" value=""/>
           </Option>
         </checkConfiguration>
       </geometryOptions>
-      <referencedLayers/>
-      <referencingLayers/>
       <fieldConfiguration>
         <field name="ID">
           <editWidget type="TextEdit">
@@ -1503,105 +1206,7 @@ def my_form_open(dialog, layer, feature):
             </config>
           </editWidget>
         </field>
-        <field name="ID1">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
         <field name="ORIG_OGC_F">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="AGE_MEAN">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="AGE_MEDIAN">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="PERC_LSOA_">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="DECILE_LSO">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="PERC_LSOA2">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="DECILE_LS2">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="PERC_LSOA3">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="DECILE_LS3">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="PERC_LSOA4">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="DECILE_LS4">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="RENDA0">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="RENDA1">
-          <editWidget type="TextEdit">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="RENDA2">
           <editWidget type="TextEdit">
             <config>
               <Option/>
@@ -1610,152 +1215,96 @@ def my_form_open(dialog, layer, feature):
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias index="0" field="ID" name=""/>
-        <alias index="1" field="CD_GEOCODI" name=""/>
-        <alias index="2" field="TIPO" name=""/>
-        <alias index="3" field="CD_GEOCODS" name=""/>
-        <alias index="4" field="NM_SUBDIST" name=""/>
-        <alias index="5" field="CD_GEOCODD" name=""/>
-        <alias index="6" field="NM_DISTRIT" name=""/>
-        <alias index="7" field="CD_GEOCODM" name=""/>
-        <alias index="8" field="NM_MUNICIP" name=""/>
-        <alias index="9" field="NM_MICRO" name=""/>
-        <alias index="10" field="NM_MESO" name=""/>
-        <alias index="11" field="ID1" name=""/>
-        <alias index="12" field="ORIG_OGC_F" name=""/>
-        <alias index="13" field="AGE_MEAN" name=""/>
-        <alias index="14" field="AGE_MEDIAN" name=""/>
-        <alias index="15" field="PERC_LSOA_" name=""/>
-        <alias index="16" field="DECILE_LSO" name=""/>
-        <alias index="17" field="PERC_LSOA2" name=""/>
-        <alias index="18" field="DECILE_LS2" name=""/>
-        <alias index="19" field="PERC_LSOA3" name=""/>
-        <alias index="20" field="DECILE_LS3" name=""/>
-        <alias index="21" field="PERC_LSOA4" name=""/>
-        <alias index="22" field="DECILE_LS4" name=""/>
-        <alias index="23" field="RENDA0" name=""/>
-        <alias index="24" field="RENDA1" name=""/>
-        <alias index="25" field="RENDA2" name=""/>
+        <alias name="" index="0" field="ID"/>
+        <alias name="" index="1" field="CD_GEOCODI"/>
+        <alias name="" index="2" field="TIPO"/>
+        <alias name="" index="3" field="CD_GEOCODS"/>
+        <alias name="" index="4" field="NM_SUBDIST"/>
+        <alias name="" index="5" field="CD_GEOCODD"/>
+        <alias name="" index="6" field="NM_DISTRIT"/>
+        <alias name="" index="7" field="CD_GEOCODM"/>
+        <alias name="" index="8" field="NM_MUNICIP"/>
+        <alias name="" index="9" field="NM_MICRO"/>
+        <alias name="" index="10" field="NM_MESO"/>
+        <alias name="" index="11" field="ORIG_OGC_F"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" field="ID" applyOnUpdate="0"/>
-        <default expression="" field="CD_GEOCODI" applyOnUpdate="0"/>
-        <default expression="" field="TIPO" applyOnUpdate="0"/>
-        <default expression="" field="CD_GEOCODS" applyOnUpdate="0"/>
-        <default expression="" field="NM_SUBDIST" applyOnUpdate="0"/>
-        <default expression="" field="CD_GEOCODD" applyOnUpdate="0"/>
-        <default expression="" field="NM_DISTRIT" applyOnUpdate="0"/>
-        <default expression="" field="CD_GEOCODM" applyOnUpdate="0"/>
-        <default expression="" field="NM_MUNICIP" applyOnUpdate="0"/>
-        <default expression="" field="NM_MICRO" applyOnUpdate="0"/>
-        <default expression="" field="NM_MESO" applyOnUpdate="0"/>
-        <default expression="" field="ID1" applyOnUpdate="0"/>
-        <default expression="" field="ORIG_OGC_F" applyOnUpdate="0"/>
-        <default expression="" field="AGE_MEAN" applyOnUpdate="0"/>
-        <default expression="" field="AGE_MEDIAN" applyOnUpdate="0"/>
-        <default expression="" field="PERC_LSOA_" applyOnUpdate="0"/>
-        <default expression="" field="DECILE_LSO" applyOnUpdate="0"/>
-        <default expression="" field="PERC_LSOA2" applyOnUpdate="0"/>
-        <default expression="" field="DECILE_LS2" applyOnUpdate="0"/>
-        <default expression="" field="PERC_LSOA3" applyOnUpdate="0"/>
-        <default expression="" field="DECILE_LS3" applyOnUpdate="0"/>
-        <default expression="" field="PERC_LSOA4" applyOnUpdate="0"/>
-        <default expression="" field="DECILE_LS4" applyOnUpdate="0"/>
-        <default expression="" field="RENDA0" applyOnUpdate="0"/>
-        <default expression="" field="RENDA1" applyOnUpdate="0"/>
-        <default expression="" field="RENDA2" applyOnUpdate="0"/>
+        <default applyOnUpdate="0" expression="" field="ID"/>
+        <default applyOnUpdate="0" expression="" field="CD_GEOCODI"/>
+        <default applyOnUpdate="0" expression="" field="TIPO"/>
+        <default applyOnUpdate="0" expression="" field="CD_GEOCODS"/>
+        <default applyOnUpdate="0" expression="" field="NM_SUBDIST"/>
+        <default applyOnUpdate="0" expression="" field="CD_GEOCODD"/>
+        <default applyOnUpdate="0" expression="" field="NM_DISTRIT"/>
+        <default applyOnUpdate="0" expression="" field="CD_GEOCODM"/>
+        <default applyOnUpdate="0" expression="" field="NM_MUNICIP"/>
+        <default applyOnUpdate="0" expression="" field="NM_MICRO"/>
+        <default applyOnUpdate="0" expression="" field="NM_MESO"/>
+        <default applyOnUpdate="0" expression="" field="ORIG_OGC_F"/>
       </defaults>
       <constraints>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="ID" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="CD_GEOCODI" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="TIPO" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="CD_GEOCODS" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="NM_SUBDIST" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="CD_GEOCODD" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="NM_DISTRIT" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="CD_GEOCODM" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="NM_MUNICIP" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="NM_MICRO" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="NM_MESO" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="ID1" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="ORIG_OGC_F" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="AGE_MEAN" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="AGE_MEDIAN" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="PERC_LSOA_" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="DECILE_LSO" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="PERC_LSOA2" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="DECILE_LS2" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="PERC_LSOA3" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="DECILE_LS3" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="PERC_LSOA4" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="DECILE_LS4" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="RENDA0" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="RENDA1" unique_strength="0"/>
-        <constraint notnull_strength="0" exp_strength="0" constraints="0" field="RENDA2" unique_strength="0"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="ID"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="CD_GEOCODI"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="TIPO"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="CD_GEOCODS"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="NM_SUBDIST"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="CD_GEOCODD"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="NM_DISTRIT"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="CD_GEOCODM"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="NM_MUNICIP"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="NM_MICRO"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="NM_MESO"/>
+        <constraint constraints="0" unique_strength="0" notnull_strength="0" exp_strength="0" field="ORIG_OGC_F"/>
       </constraints>
       <constraintExpressions>
-        <constraint desc="" exp="" field="ID"/>
-        <constraint desc="" exp="" field="CD_GEOCODI"/>
-        <constraint desc="" exp="" field="TIPO"/>
-        <constraint desc="" exp="" field="CD_GEOCODS"/>
-        <constraint desc="" exp="" field="NM_SUBDIST"/>
-        <constraint desc="" exp="" field="CD_GEOCODD"/>
-        <constraint desc="" exp="" field="NM_DISTRIT"/>
-        <constraint desc="" exp="" field="CD_GEOCODM"/>
-        <constraint desc="" exp="" field="NM_MUNICIP"/>
-        <constraint desc="" exp="" field="NM_MICRO"/>
-        <constraint desc="" exp="" field="NM_MESO"/>
-        <constraint desc="" exp="" field="ID1"/>
-        <constraint desc="" exp="" field="ORIG_OGC_F"/>
-        <constraint desc="" exp="" field="AGE_MEAN"/>
-        <constraint desc="" exp="" field="AGE_MEDIAN"/>
-        <constraint desc="" exp="" field="PERC_LSOA_"/>
-        <constraint desc="" exp="" field="DECILE_LSO"/>
-        <constraint desc="" exp="" field="PERC_LSOA2"/>
-        <constraint desc="" exp="" field="DECILE_LS2"/>
-        <constraint desc="" exp="" field="PERC_LSOA3"/>
-        <constraint desc="" exp="" field="DECILE_LS3"/>
-        <constraint desc="" exp="" field="PERC_LSOA4"/>
-        <constraint desc="" exp="" field="DECILE_LS4"/>
-        <constraint desc="" exp="" field="RENDA0"/>
-        <constraint desc="" exp="" field="RENDA1"/>
-        <constraint desc="" exp="" field="RENDA2"/>
+        <constraint exp="" field="ID" desc=""/>
+        <constraint exp="" field="CD_GEOCODI" desc=""/>
+        <constraint exp="" field="TIPO" desc=""/>
+        <constraint exp="" field="CD_GEOCODS" desc=""/>
+        <constraint exp="" field="NM_SUBDIST" desc=""/>
+        <constraint exp="" field="CD_GEOCODD" desc=""/>
+        <constraint exp="" field="NM_DISTRIT" desc=""/>
+        <constraint exp="" field="CD_GEOCODM" desc=""/>
+        <constraint exp="" field="NM_MUNICIP" desc=""/>
+        <constraint exp="" field="NM_MICRO" desc=""/>
+        <constraint exp="" field="NM_MESO" desc=""/>
+        <constraint exp="" field="ORIG_OGC_F" desc=""/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
         <columns>
-          <column type="field" width="-1" hidden="0" name="ID"/>
-          <column type="field" width="-1" hidden="0" name="CD_GEOCODI"/>
-          <column type="field" width="-1" hidden="0" name="TIPO"/>
-          <column type="field" width="-1" hidden="0" name="CD_GEOCODS"/>
-          <column type="field" width="-1" hidden="0" name="NM_SUBDIST"/>
-          <column type="field" width="-1" hidden="0" name="CD_GEOCODD"/>
-          <column type="field" width="-1" hidden="0" name="NM_DISTRIT"/>
-          <column type="field" width="-1" hidden="0" name="CD_GEOCODM"/>
-          <column type="field" width="-1" hidden="0" name="NM_MUNICIP"/>
-          <column type="field" width="-1" hidden="0" name="NM_MICRO"/>
-          <column type="field" width="-1" hidden="0" name="NM_MESO"/>
-          <column type="field" width="-1" hidden="0" name="ID1"/>
-          <column type="field" width="-1" hidden="0" name="ORIG_OGC_F"/>
-          <column type="field" width="-1" hidden="0" name="AGE_MEAN"/>
-          <column type="field" width="-1" hidden="0" name="AGE_MEDIAN"/>
-          <column type="field" width="-1" hidden="0" name="PERC_LSOA_"/>
-          <column type="field" width="-1" hidden="0" name="DECILE_LSO"/>
-          <column type="field" width="-1" hidden="0" name="PERC_LSOA2"/>
-          <column type="field" width="-1" hidden="0" name="DECILE_LS2"/>
-          <column type="field" width="-1" hidden="0" name="PERC_LSOA3"/>
-          <column type="field" width="-1" hidden="0" name="DECILE_LS3"/>
-          <column type="field" width="-1" hidden="0" name="PERC_LSOA4"/>
-          <column type="field" width="-1" hidden="0" name="DECILE_LS4"/>
-          <column type="field" width="-1" hidden="0" name="RENDA0"/>
-          <column type="field" width="-1" hidden="0" name="RENDA1"/>
-          <column type="field" width="-1" hidden="0" name="RENDA2"/>
-          <column type="actions" width="-1" hidden="1"/>
+          <column name="ID" hidden="0" type="field" width="-1"/>
+          <column name="CD_GEOCODI" hidden="0" type="field" width="-1"/>
+          <column name="TIPO" hidden="0" type="field" width="-1"/>
+          <column name="CD_GEOCODS" hidden="0" type="field" width="-1"/>
+          <column name="NM_SUBDIST" hidden="0" type="field" width="-1"/>
+          <column name="CD_GEOCODD" hidden="0" type="field" width="-1"/>
+          <column name="NM_DISTRIT" hidden="0" type="field" width="-1"/>
+          <column name="CD_GEOCODM" hidden="0" type="field" width="-1"/>
+          <column name="NM_MUNICIP" hidden="0" type="field" width="-1"/>
+          <column name="NM_MICRO" hidden="0" type="field" width="-1"/>
+          <column name="NM_MESO" hidden="0" type="field" width="-1"/>
+          <column name="ID1" hidden="0" type="field" width="-1"/>
+          <column name="ORIG_OGC_F" hidden="0" type="field" width="-1"/>
+          <column name="AGE_MEAN" hidden="0" type="field" width="-1"/>
+          <column name="AGE_MEDIAN" hidden="0" type="field" width="-1"/>
+          <column name="PERC_LSOA_" hidden="0" type="field" width="-1"/>
+          <column name="DECILE_LSO" hidden="0" type="field" width="-1"/>
+          <column name="PERC_LSOA2" hidden="0" type="field" width="-1"/>
+          <column name="DECILE_LS2" hidden="0" type="field" width="-1"/>
+          <column name="PERC_LSOA3" hidden="0" type="field" width="-1"/>
+          <column name="DECILE_LS3" hidden="0" type="field" width="-1"/>
+          <column name="PERC_LSOA4" hidden="0" type="field" width="-1"/>
+          <column name="DECILE_LS4" hidden="0" type="field" width="-1"/>
+          <column name="RENDA0" hidden="0" type="field" width="-1"/>
+          <column name="RENDA1" hidden="0" type="field" width="-1"/>
+          <column name="RENDA2" hidden="0" type="field" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
@@ -1787,32 +1336,32 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <editable>
-        <field editable="1" name="AGE_MEAN"/>
-        <field editable="1" name="AGE_MEDIAN"/>
-        <field editable="1" name="CD_GEOCODD"/>
-        <field editable="1" name="CD_GEOCODI"/>
-        <field editable="1" name="CD_GEOCODM"/>
-        <field editable="1" name="CD_GEOCODS"/>
-        <field editable="1" name="DECILE_LS2"/>
-        <field editable="1" name="DECILE_LS3"/>
-        <field editable="1" name="DECILE_LS4"/>
-        <field editable="1" name="DECILE_LSO"/>
-        <field editable="1" name="ID"/>
-        <field editable="1" name="ID1"/>
-        <field editable="1" name="NM_DISTRIT"/>
-        <field editable="1" name="NM_MESO"/>
-        <field editable="1" name="NM_MICRO"/>
-        <field editable="1" name="NM_MUNICIP"/>
-        <field editable="1" name="NM_SUBDIST"/>
-        <field editable="1" name="ORIG_OGC_F"/>
-        <field editable="1" name="PERC_LSOA2"/>
-        <field editable="1" name="PERC_LSOA3"/>
-        <field editable="1" name="PERC_LSOA4"/>
-        <field editable="1" name="PERC_LSOA_"/>
-        <field editable="1" name="RENDA0"/>
-        <field editable="1" name="RENDA1"/>
-        <field editable="1" name="RENDA2"/>
-        <field editable="1" name="TIPO"/>
+        <field name="AGE_MEAN" editable="1"/>
+        <field name="AGE_MEDIAN" editable="1"/>
+        <field name="CD_GEOCODD" editable="1"/>
+        <field name="CD_GEOCODI" editable="1"/>
+        <field name="CD_GEOCODM" editable="1"/>
+        <field name="CD_GEOCODS" editable="1"/>
+        <field name="DECILE_LS2" editable="1"/>
+        <field name="DECILE_LS3" editable="1"/>
+        <field name="DECILE_LS4" editable="1"/>
+        <field name="DECILE_LSO" editable="1"/>
+        <field name="ID" editable="1"/>
+        <field name="ID1" editable="1"/>
+        <field name="NM_DISTRIT" editable="1"/>
+        <field name="NM_MESO" editable="1"/>
+        <field name="NM_MICRO" editable="1"/>
+        <field name="NM_MUNICIP" editable="1"/>
+        <field name="NM_SUBDIST" editable="1"/>
+        <field name="ORIG_OGC_F" editable="1"/>
+        <field name="PERC_LSOA2" editable="1"/>
+        <field name="PERC_LSOA3" editable="1"/>
+        <field name="PERC_LSOA4" editable="1"/>
+        <field name="PERC_LSOA_" editable="1"/>
+        <field name="RENDA0" editable="1"/>
+        <field name="RENDA1" editable="1"/>
+        <field name="RENDA2" editable="1"/>
+        <field name="TIPO" editable="1"/>
       </editable>
       <labelOnTop>
         <field name="AGE_MEAN" labelOnTop="0"/>
@@ -1842,7 +1391,6 @@ def my_form_open(dialog, layer, feature):
         <field name="RENDA2" labelOnTop="0"/>
         <field name="TIPO" labelOnTop="0"/>
       </labelOnTop>
-      <dataDefinedFieldProperties/>
       <widgets/>
       <previewExpression>"ID"</previewExpression>
       <mapTip></mapTip>
@@ -1971,16 +1519,9 @@ def my_form_open(dialog, layer, feature):
       <mapFormat type="QString">leaflet</mapFormat>
     </qgis2web>
   </properties>
-  <dataDefinedServerProperties>
-    <Option type="Map">
-      <Option type="QString" value="" name="name"/>
-      <Option name="properties"/>
-      <Option type="QString" value="collection" name="type"/>
-    </Option>
-  </dataDefinedServerProperties>
   <visibility-presets/>
   <transformContext>
-    <srcDest dest="EPSG:4674" destTransform="+towgs84=0,0,0" source="EPSG:4326" sourceTransform=""/>
+    <srcDest destTransform="+towgs84=0,0,0" source="EPSG:4326" sourceTransform="" dest="EPSG:4674"/>
   </transformContext>
   <projectMetadata>
     <identifier></identifier>
@@ -1994,8 +1535,8 @@ def my_form_open(dialog, layer, feature):
     <creation></creation>
   </projectMetadata>
   <Annotations>
-    <TextAnnotationItem document="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'Ubuntu'; font-size:10pt;&quot;>Este layer mostra apenas as UCs que estavam nas redondezas destes municipios, apenas servindo como referencial do estudo.&lt;/span>&lt;/p>&lt;/body>&lt;/html>">
-      <AnnotationItem offsetYMM="-52.02916666666682488" mapPositionFixed="1" visible="1" frameWidthMM="50" mapPosX="-49.96395943230993453" mapPosY="-24.42292883496287459" canvasPosY="0.7921348314606742" offsetXMM="-1.02291666666659697" canvasPosX="0.14722753346080306" contentsMargin="" frameHeightMM="27.91666666666674246">
+    <TextAnnotationItem document="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Ubuntu'; font-size:10pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>SP: 751 setores censitários&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>PR: 203 setores censitários&lt;/p>&lt;/body>&lt;/html>">
+      <AnnotationItem offsetXMM="-3.66875000000000107" visible="1" canvasPosX="0.31931166347992002" offsetYMM="-22.78958333333334352" mapPositionFixed="1" contentsMargin="" frameHeightMM="13.09374999999998934" mapPosY="-24.17185265419659856" mapPosX="-48.77784092317270392" frameWidthMM="50" canvasPosY="0.37780898876404623">
         <spatialrefsys>
           <wkt>GEOGCS["SIRGAS 2000",DATUM["Sistema_de_Referencia_Geocentrico_para_las_AmericaS_2000",SPHEROID["GRS 1980",6378137,298.257222101,AUTHORITY["EPSG","7019"]],TOWGS84[0,0,0,0,0,0,0],AUTHORITY["EPSG","6674"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4674"]]</wkt>
           <proj4>+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs</proj4>
@@ -2007,8 +1548,8 @@ def my_form_open(dialog, layer, feature):
           <ellipsoidacronym>GRS80</ellipsoidacronym>
           <geographicflag>true</geographicflag>
         </spatialrefsys>
-        <symbol type="marker" clip_to_extent="1" name="marker symbol" force_rhr="0" alpha="1">
-          <layer locked="0" pass="0" enabled="1" class="SimpleMarker">
+        <symbol name="marker symbol" alpha="1" type="marker" force_rhr="0" clip_to_extent="1">
+          <layer enabled="1" pass="0" locked="0" class="SimpleMarker">
             <prop v="0" k="angle"/>
             <prop v="255,0,0,255" k="color"/>
             <prop v="1" k="horizontal_anchor_point"/>
@@ -2029,16 +1570,16 @@ def my_form_open(dialog, layer, feature):
             <prop v="1" k="vertical_anchor_point"/>
             <data_defined_properties>
               <Option type="Map">
-                <Option type="QString" value="" name="name"/>
+                <Option name="name" type="QString" value=""/>
                 <Option name="properties"/>
-                <Option type="QString" value="collection" name="type"/>
+                <Option name="type" type="QString" value="collection"/>
               </Option>
             </data_defined_properties>
           </layer>
         </symbol>
         <fillSymbol>
-          <symbol type="fill" clip_to_extent="1" name="fill symbol" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="fill symbol" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="miter" k="joinstyle"/>
@@ -2052,9 +1593,9 @@ def my_form_open(dialog, layer, feature):
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -2062,8 +1603,8 @@ def my_form_open(dialog, layer, feature):
         </fillSymbol>
       </AnnotationItem>
     </TextAnnotationItem>
-    <TextAnnotationItem document="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'Ubuntu'; font-size:10pt;&quot;>SP: 751 setores censitários&lt;/span>&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'Ubuntu'; font-size:10pt;&quot;>PR: 203 setores censitários&lt;/span>&lt;/p>&lt;/body>&lt;/html>">
-      <AnnotationItem offsetYMM="-22.78958333333334352" mapPositionFixed="1" visible="1" frameWidthMM="50" mapPosX="-48.77784092317270392" mapPosY="-24.17185265419659856" canvasPosY="0.37780898876404623" offsetXMM="-3.66875000000000107" canvasPosX="0.31931166347992002" contentsMargin="" frameHeightMM="13.09374999999998934">
+    <TextAnnotationItem document="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Ubuntu'; font-size:10pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Este layer mostra apenas as UCs que estavam nas redondezas destes municipios, apenas servindo como referencial do estudo.&lt;/p>&lt;/body>&lt;/html>">
+      <AnnotationItem offsetXMM="-1.02291666666659697" visible="1" canvasPosX="0.14722753346080306" offsetYMM="-52.02916666666682488" mapPositionFixed="1" contentsMargin="" frameHeightMM="27.91666666666674246" mapPosY="-24.42292883496287459" mapPosX="-49.96395943230993453" frameWidthMM="50" canvasPosY="0.7921348314606742">
         <spatialrefsys>
           <wkt>GEOGCS["SIRGAS 2000",DATUM["Sistema_de_Referencia_Geocentrico_para_las_AmericaS_2000",SPHEROID["GRS 1980",6378137,298.257222101,AUTHORITY["EPSG","7019"]],TOWGS84[0,0,0,0,0,0,0],AUTHORITY["EPSG","6674"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4674"]]</wkt>
           <proj4>+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs</proj4>
@@ -2075,8 +1616,8 @@ def my_form_open(dialog, layer, feature):
           <ellipsoidacronym>GRS80</ellipsoidacronym>
           <geographicflag>true</geographicflag>
         </spatialrefsys>
-        <symbol type="marker" clip_to_extent="1" name="marker symbol" force_rhr="0" alpha="1">
-          <layer locked="0" pass="0" enabled="1" class="SimpleMarker">
+        <symbol name="marker symbol" alpha="1" type="marker" force_rhr="0" clip_to_extent="1">
+          <layer enabled="1" pass="0" locked="0" class="SimpleMarker">
             <prop v="0" k="angle"/>
             <prop v="255,0,0,255" k="color"/>
             <prop v="1" k="horizontal_anchor_point"/>
@@ -2097,16 +1638,16 @@ def my_form_open(dialog, layer, feature):
             <prop v="1" k="vertical_anchor_point"/>
             <data_defined_properties>
               <Option type="Map">
-                <Option type="QString" value="" name="name"/>
+                <Option name="name" type="QString" value=""/>
                 <Option name="properties"/>
-                <Option type="QString" value="collection" name="type"/>
+                <Option name="type" type="QString" value="collection"/>
               </Option>
             </data_defined_properties>
           </layer>
         </symbol>
         <fillSymbol>
-          <symbol type="fill" clip_to_extent="1" name="fill symbol" force_rhr="0" alpha="1">
-            <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+          <symbol name="fill symbol" alpha="1" type="fill" force_rhr="0" clip_to_extent="1">
+            <layer enabled="1" pass="0" locked="0" class="SimpleFill">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="miter" k="joinstyle"/>
@@ -2120,9 +1661,9 @@ def my_form_open(dialog, layer, feature):
               <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -2136,19 +1677,4 @@ def my_form_open(dialog, layer, feature):
   <ProjectViewSettings UseProjectScales="0">
     <Scales/>
   </ProjectViewSettings>
-  <ProjectTimeSettings frameRate="1" timeStep="1" timeStepUnit="h" cumulativeTemporalRange="0"/>
-  <ProjectDisplaySettings>
-    <BearingFormat id="bearing">
-      <Option type="Map">
-        <Option type="QChar" value="" name="decimal_separator"/>
-        <Option type="int" value="6" name="decimals"/>
-        <Option type="int" value="0" name="direction_format"/>
-        <Option type="int" value="0" name="rounding_type"/>
-        <Option type="bool" value="false" name="show_plus"/>
-        <Option type="bool" value="true" name="show_thousand_separator"/>
-        <Option type="bool" value="false" name="show_trailing_zeros"/>
-        <Option type="QChar" value="" name="thousand_separator"/>
-      </Option>
-    </BearingFormat>
-  </ProjectDisplaySettings>
 </qgis>

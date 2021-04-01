@@ -4,7 +4,8 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input 
 import tensorflow.keras
 
-from tqdm.notebook import tqdm
+#from tqdm.notebook import tqdm
+from tqdm import tqdm
 from ipywidgets import IntProgress
 
 import subprocess
@@ -16,11 +17,29 @@ import random
 import re
 import os
 
+import matplotlib.pyplot as plt
+
 
 VGG_SHAPE   = (4096,) #number of features out from VGG
 NUM_FOLDS   = 5
 NUM_ANGLES  = 4 #DIRS = [0, 90, 180, 270] for street images
 NUM_CLASSES = 5  #scores = [1, 2, 3, 4, 5]
+BATCH_SIZE = 400
+EPOCHS = 1000
+ 
+
+import customized_metrics
+
+def Pearson(y_true, y_pred): 
+    return params_model.Pearson(y_true, y_pred, axis=-2)
+
+
+def KendallTau(y_true, y_pred): 
+    return params_model.KendallTau(y_true, y_pred)
+
+def CohenKappa(y_true, y_pred): 
+    return params_model.CohenKappa(y_true, y_pred, N=NUM_CLASSES, bsize=BATCH_SIZE, y_pow=2, eps=1e-10, name='kappa')
+
 
 def create_model():
     '''
@@ -44,7 +63,15 @@ def create_model():
     output = Dense(NUM_CLASSES, activation='sigmoid')(l3) 
     
     model = Model(inputs, output)
-    model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+    opt= tf.keras.optimizers.Adam(learning_rate=5e-6)    
+    #model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy'])
+    model.compile(optimizer=opt,     
+    loss=['categorical_crossentropy'],     
+    metrics=['accuracy','mean_absolute_error', Pearson,CohenKappa,KendallTau],
+    run_eagerly=True
+    ) 
+#tf.keras.losses.MeanSquaredError() , tf.keras.losses.CategoricalCrossentropy()], 
+    
     
     return model
 
@@ -55,7 +82,7 @@ def split_data():
         def get_fold(filename):        
             location = re.sub(r'\-\d+\.jpg', '', filename)
             if not location in locations:
-                locations[location] = np.random.randint(0, NUM_FOLDS)
+                locations[location] = np.random.randint (0, NUM_FOLDS)
             return locations[location]
 
         df = pd.read_csv('geo.csv')
@@ -74,12 +101,8 @@ def data_generator(batch_size, epochs, fold, indicator, folder_indicator):
     df = pd.read_csv('geo_fold.csv')
     df = pd.merge(df, idh, left_on='setor', right_on='Cod_setor', how='inner') 
     
-    for epoch in range(epochs):        
-        tmp=True
+    for epoch in range(epochs):   
         for chunk in pd.read_csv('vgg_features.csv', chunksize=4 * batch_size):                    
-            if (tmp == True ):
-                print(chunk['filename'].iloc[0])
-                tmp=False
 
             chunk['filename'] = chunk['filename'].apply(lambda x: x.split('/')[2]) 
             #format ../images/Ur0pYB2-_GRdWdiDs7fLDw-0.jpg
@@ -101,8 +124,9 @@ def data_generator(batch_size, epochs, fold, indicator, folder_indicator):
                 yield X, y
 
 
-BATCH_SIZE = 16
-EPOCHS = 3
+# BATCH_SIZE = 16
+# EPOCHS = 3
+
 
 def main(indicator, folder_indicator):
     '''
@@ -122,17 +146,55 @@ def main(indicator, folder_indicator):
             save_weights_only=False,
             monitor='loss',
             mode='min',
+            verbose=1,
             save_best_only=True)
         
         datagen = data_generator(BATCH_SIZE, EPOCHS, FOLD, indicator, folder_indicator)
      
-        model.fit(
+        history=model.fit(
             datagen,
             steps_per_epoch=112368//BATCH_SIZE//NUM_ANGLES,
             epochs=EPOCHS,
             callbacks=[tensorboard, savemodel],
-            verbose=2
-        )
+            verbose=1
+        )        
+        # # list all data in history
+        # print(history.history.keys())
+        # # summarize history for accuracy
+        # f = plt.figure()
+        # plt.plot(history.history['accuracy'])
+        # #plt.plot(history.history['val_accuracy'])
+        # plt.title('model accuracy')
+        # plt.ylabel('accuracy')
+        # plt.xlabel('epoch')
+        # #plt.legend(['train', 'test'], loc='upper left')        
+        # plt.legend(['train'], loc='upper left')        
+        # plt.ylim(0,100)         
+        # f1.savefig(f'accuracy-FOLD{FOLD}.pdf', bbox_inches='tight')
+        # plt.show()
+
+        # # summarize history for loss
+        # f2 = plt.figure()
+        # plt.plot(history.history['loss'])
+        # #plt.plot(history.history['val_loss'])
+        # plt.title('model loss')
+        # plt.ylabel('loss')
+        # plt.xlabel('epoch')
+        # #plt.legend(['train', 'test'], loc='upper left')        
+        # plt.legend(['train'], loc='upper left')        
+        # f2.savefig(f'loss-FOLD{FOLD}.pdf', bbox_inches='tight')
+        # plt.show()
+
+        # save training history
+        # with open(f'trainHistoryDict-FOLD{FOLD}', 'wb') as file_pi:
+        #     pickle.dump(history.history, file_pi)
+        # or save to csv: 
+        hist_csv_file = f'{folder_indicator}/history-FOLD{FOLD}.csv'
+        # convert the history.history dict to a pandas DataFrame:     
+        hist_df = pd.DataFrame(history.history) 
+        with open(hist_csv_file, mode='w') as f:
+            hist_df.to_csv(f)
+
         del tensorboard
         del savemodel
         del datagen
@@ -145,10 +207,12 @@ if __name__ == "__main__":
     #python train.py    
     
     np.random.seed(28657) #seed random generator for reproduciblity
+    
+    if False:
+        split_data()#to be run once only!
+        
 
-    split_data()#to be run once only!
-
-    main(indicator='quintilAlfabetizacao',folder_indicator='literacy')
+    #main(indicator='quintilAlfabetizacao',folder_indicator='literacy')
  
     main(indicator='quintilRenda',folder_indicator='income')
     

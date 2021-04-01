@@ -10,10 +10,13 @@ import os
 import glob
 
 
+from customized_metrics import Pearson, CohenKappa, KendallTau
 
 VGG_SHAPE  = (4096,) #number of features out from VGG
 NUM_FOLDS  = 5
 NUM_ANGLES = 4 #DIRS = [0, 90, 180, 270] for street images
+
+ 
 
 def main(indicator, folder_indicator):
     """
@@ -33,7 +36,10 @@ def main(indicator, folder_indicator):
     if True: # to be run only once!
         for FOLD in tqdm(range(0, NUM_FOLDS)):
 
-            model = load_model(glob.glob(f'{folder_indicator}/models/FOLD{FOLD}*')[0])
+            #model = load_model(glob.glob(f'{folder_indicator}/models/FOLD{FOLD}*')[0])
+            model = load_model(glob.glob(f'{folder_indicator}/models/FOLD{FOLD}*')[0],compile=False, custom_objects={'Pearson': Pearson,'CohenKappa': CohenKappa,'KendallTau': KendallTau})
+            ####custom_objects:  Optional dictionary mapping names (strings) to custom functions to be considered during deserialization. 
+            #####metrics=['accuracy','mean_absolute_error', Pearson,CohenKappa,KendallTau] (from 3_Train.py: model was created with these customized metrics)            
 
             csv_file = f'{folder_indicator}/folds/fold-{FOLD}.csv'
             pred_file =f'{folder_indicator}/folds/pred-{FOLD}.csv'
@@ -59,8 +65,7 @@ def main(indicator, folder_indicator):
 
 if __name__ == "__main__":
     #python predict.py
-    
-    main(indicator='quintilAlfabetizacao',folder_indicator='literacy')
+     
  
     main(indicator='quintilRenda',folder_indicator='income')
     

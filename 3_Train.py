@@ -31,14 +31,11 @@ EPOCHS = 1000
 import customized_metrics
 
 def Pearson(y_true, y_pred): 
-    return params_model.Pearson(y_true, y_pred, axis=-2)
+    return customized_metrics.Pearson(y_true, y_pred, axis=-2)
 
 
 def KendallTau(y_true, y_pred): 
-    return params_model.KendallTau(y_true, y_pred)
-
-def CohenKappa(y_true, y_pred): 
-    return params_model.CohenKappa(y_true, y_pred, N=NUM_CLASSES, bsize=BATCH_SIZE, y_pow=2, eps=1e-10, name='kappa')
+    return customized_metrics.KendallTau(y_true, y_pred)
 
 
 def create_model():
@@ -67,7 +64,7 @@ def create_model():
     #model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy'])
     model.compile(optimizer=opt,     
     loss=['categorical_crossentropy'],     
-    metrics=['accuracy','mean_absolute_error', Pearson,CohenKappa,KendallTau],
+    metrics=['accuracy','mean_absolute_error', Pearson,KendallTau],
     run_eagerly=True
     ) 
 #tf.keras.losses.MeanSquaredError() , tf.keras.losses.CategoricalCrossentropy()], 
@@ -113,8 +110,10 @@ def data_generator(batch_size, epochs, fold, indicator, folder_indicator):
             test = batch[batch['fold'] == fold]
             
             if epoch == 0:
-                mode = 'a' if os.path.exists(csv_filename) else 'w'
-                test.to_csv(csv_filename, index=None, mode=mode)
+                mode = 'a' if os.path.exists(csv_filename) else 'w'                
+                test.to_csv(csv_filename, index=None, mode=mode,columns = ['filename','setor','fold', indicator)
+                #test.to_csv(csv_filename, index=None, mode=mode) #write all columns
+                
             batch = batch[batch['fold'] != fold]
             #print(type(batch)) #(64, 4101)
             if len(batch) > 0:
@@ -160,36 +159,10 @@ def main(indicator, folder_indicator):
         )        
         # # list all data in history
         # print(history.history.keys())
-        # # summarize history for accuracy
-        # f = plt.figure()
-        # plt.plot(history.history['accuracy'])
-        # #plt.plot(history.history['val_accuracy'])
-        # plt.title('model accuracy')
-        # plt.ylabel('accuracy')
-        # plt.xlabel('epoch')
-        # #plt.legend(['train', 'test'], loc='upper left')        
-        # plt.legend(['train'], loc='upper left')        
-        # plt.ylim(0,100)         
-        # f1.savefig(f'accuracy-FOLD{FOLD}.pdf', bbox_inches='tight')
-        # plt.show()
 
-        # # summarize history for loss
-        # f2 = plt.figure()
-        # plt.plot(history.history['loss'])
-        # #plt.plot(history.history['val_loss'])
-        # plt.title('model loss')
-        # plt.ylabel('loss')
-        # plt.xlabel('epoch')
-        # #plt.legend(['train', 'test'], loc='upper left')        
-        # plt.legend(['train'], loc='upper left')        
-        # f2.savefig(f'loss-FOLD{FOLD}.pdf', bbox_inches='tight')
-        # plt.show()
 
         # save training history
-        # with open(f'trainHistoryDict-FOLD{FOLD}', 'wb') as file_pi:
-        #     pickle.dump(history.history, file_pi)
-        # or save to csv: 
-        hist_csv_file = f'{folder_indicator}/history-FOLD{FOLD}.csv'
+        hist_csv_file = f'{folder_indicator}/history/history-FOLD{FOLD}.csv'
         # convert the history.history dict to a pandas DataFrame:     
         hist_df = pd.DataFrame(history.history) 
         with open(hist_csv_file, mode='w') as f:

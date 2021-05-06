@@ -24,7 +24,7 @@ OS: Ubuntu 16.04.6 LTS
 CPU: Intel Xeon Silver 4110
 GPU: 1x NVIDIA Titan Xp
 Memory RAM: 8 GB
-Storage: 1 TB
+Storage: 22 GB
 
 
 

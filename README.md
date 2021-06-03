@@ -2,10 +2,13 @@
 
 # A Deep-learning Method For The Prediction Of Socio-economic Indicators From Street-view Imagery, Using A Case Study From Brazil
 
-This code was used to generate results and images for the article "A Deep-learning Method For The Prediction Of Socio-economic Indicators From Street-view Imagery, Using A Case Study From Brazil". (2021) MACHICAO, Jeaneth; PIZZIGATTI CORRÊA Pedro; FERRAZ Katia; VELLENICH, Danton Ferreira; DAVID Romain; MABILE Laurence; STALL Shelley ;SPECHT Alison ;O'BRIEN Margaret ; MENEGUZZI, Leandro; OMETTO, Jean; SANTOS, Solange
+This code was used to generate results and images for the submitted article "A Deep-learning Method For The Prediction Of Socio-economic Indicators From Street-view Imagery, Using A Case Study From Brazil". (2021) MACHICAO, Jeaneth; PIZZIGATTI CORRÊA Pedro; FERRAZ, Katia; VELLENICH, Danton Ferreira; DAVID Romain; MABILE Laurence; STALL, Shelley; SPECHT, Alison; O'BRIEN, Margaret; MENEGUZZI, Leandro; OMETTO, Jean; SANTOS, Solange
 
 For complete reproducibility and replication, see notes in “Reproducibility and Replication” below.
 
+## Links to related projects
+
+This work was based on the [paper](https://www.nature.com/articles/s41598-019-42036-w) with source code in [github](https://github.com/esrasuel/measuring-inequalities-sview)
 
 ## REQUIREMENTS:
 

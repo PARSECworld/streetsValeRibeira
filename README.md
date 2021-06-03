@@ -1,6 +1,8 @@
 ![alt text](http://parsecproject.org/wp-content/uploads/2019/10/cropped-PARSEC_Logo-1.png)
 
 # A Deep-learning Method For The Prediction Of Socio-economic Indicators From Street-view Imagery, Using A Case Study From Brazil
+[![DOI](https://zenodo.org/badge/348144712.svg)](https://zenodo.org/badge/latestdoi/348144712)
+
 
 This code was used to generate results and images for the submitted article "A Deep-learning Method For The Prediction Of Socio-economic Indicators From Street-view Imagery, Using A Case Study From Brazil". (2021) MACHICAO, Jeaneth; PIZZIGATTI CORRÊA Pedro; FERRAZ, Katia; VELLENICH, Danton Ferreira; DAVID Romain; MABILE Laurence; STALL, Shelley; SPECHT, Alison; O'BRIEN, Margaret; MENEGUZZI, Leandro; OMETTO, Jean; SANTOS, Solange
 
